@@ -2,7 +2,7 @@
 
 echo "# --- --- --- --- --- script ---> $(readlink -f ${0})"
 
-export BASE_VERSION=7.0.5
+export BASE_VERSION=$EPICS_BASE_VERSION
 export EPICS_BASE_NAME=base-${BASE_VERSION}
 export EPICS_BASE="${APP_ROOT}/${EPICS_BASE_NAME}"
 

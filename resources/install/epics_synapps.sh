@@ -12,7 +12,6 @@ export PATH="${PATH}:${SUPPORT}/utils"
 export IOCS_DIR="$(readlink -m ${SUPPORT}/../iocs)"
 mkdir -p "${IOCS_DIR}"
 
-export MOTOR_HASH=R7-2-2
 export CAPUTRECORDER_HASH=master  # https://github.com/epics-modules/motor/issues/91
 
 echo "# ................................ update ~/bash_aliases" 2>&1 | tee -a "${LOG_FILE}"
@@ -34,7 +33,7 @@ echo "# ................................ download EPICS assemble_synApps.sh" 2>&
 
 # download the installer script
 # ENV HASH=master
-export HASH=R6-2-1
+export HASH=$SYNAPPS_HASH
 wget \
     -q \
     --no-check-certificate \
